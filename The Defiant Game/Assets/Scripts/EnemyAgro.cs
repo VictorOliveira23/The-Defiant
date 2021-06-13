@@ -33,7 +33,6 @@ public class EnemyAgro : MonoBehaviour
 
         if(distToPlayer < agroRange){
             //code to chase player
-
             ChasePlayer();
         }
         else{

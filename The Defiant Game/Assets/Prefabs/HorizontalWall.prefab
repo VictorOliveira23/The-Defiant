@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8708943356737605261}
   - component: {fileID: 1732028836675175033}
   - component: {fileID: 4616079108749523626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HorizontalWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8708943357350385260}
   - component: {fileID: 8708943357350385263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8708943357394786045}
   - component: {fileID: 8708943357394785922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: unity_sprites_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

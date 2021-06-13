@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6529893469612690664}
   - component: {fileID: 6529893469612690667}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: unity_sprites_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6529893470491772702}
   - component: {fileID: 6529893470491772703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 6529893471276214534}
   - component: {fileID: 5797188418545571395}
   - component: {fileID: 3662436636246493158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VerticalWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

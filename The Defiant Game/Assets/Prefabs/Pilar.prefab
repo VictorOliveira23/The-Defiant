@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8867328279144710575}
   - component: {fileID: 2868496812089527905}
   - component: {fileID: 6645121607507712981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pilar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8867328279967964382}
   - component: {fileID: 8867328279967964377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: unity_sprites_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
