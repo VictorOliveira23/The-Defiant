@@ -31,6 +31,9 @@ public class AIDestinationSetter : VersionedMonoBehaviour {
 
 		private Vector2 start;
 
+		public bool rotate;
+
+		private Animator animator;
 
 		void Start()
 			{
