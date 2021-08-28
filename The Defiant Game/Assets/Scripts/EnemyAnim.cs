@@ -7,7 +7,6 @@ public class EnemyAnim : MonoBehaviour
 
     private Animator animator;
     Vector3 moving = new Vector3();
-
     
     // Start is called before the first frame update
     void Start()
