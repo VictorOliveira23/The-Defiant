@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider;
 
-
     private void Start() {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
@@ -21,8 +20,12 @@ public class PlayerHealth : MonoBehaviour
         }else if(health <= 0){
             health = 0f;
             healthSlider.value = health;
-            Destroy(gameObject);
+            PlayerDie();
         }
+    }
+    private void PlayerDie(){
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
     }
     private void OnGUI() {
         float t = Time.deltaTime / 1f;

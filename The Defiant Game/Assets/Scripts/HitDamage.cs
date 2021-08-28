@@ -9,6 +9,18 @@ public class HitDamage : MonoBehaviour
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
 
+    private void OnCollisionEnter2D(Collision2D damage) {
+        if(damage.gameObject.tag == "Player"){
+            if(attackSpeed <= canAttack){
+                Debug.Log("HIT!");
+                damage.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+                canAttack = 0f;
+            }else{
+                canAttack += Time.deltaTime;
+            }
+           
+        }
+    }
     private void OnCollisionStay2D(Collision2D damage) {
         if(damage.gameObject.tag == "Player"){
             if(attackSpeed <= canAttack){
