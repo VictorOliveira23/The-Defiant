@@ -17,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
         health += mod;
         if(health > maxHealth){
             health = maxHealth;
+        }else if(health < mod){
+            health = mod;
         }else if(health <= 0){
             health = 0f;
             healthSlider.value = health;
