@@ -13,7 +13,7 @@ public class CameraFallow : MonoBehaviour
         Vector3 targetPos = target.position + cameraOffset;
         Vector3 clampedPos = new Vector3(Mathf.Clamp(targetPos.x, xMin, float.MaxValue), targetPos.y, targetPos.z);
         Vector3 smoothPos = Vector3.SmoothDamp(transform.position, clampedPos,ref velocity, followSpeed * Time.fixedDeltaTime);
-
         transform.position = smoothPos;
+
     }
 }

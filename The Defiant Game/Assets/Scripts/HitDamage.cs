@@ -18,7 +18,6 @@ public class HitDamage : MonoBehaviour
             }else{
                 canAttack += Time.deltaTime;
             }
-           
         }
     }
     private void OnCollisionStay2D(Collision2D damage) {
