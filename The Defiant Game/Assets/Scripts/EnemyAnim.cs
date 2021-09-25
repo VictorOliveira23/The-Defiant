@@ -36,7 +36,7 @@ public class EnemyAnim : MonoBehaviour
             //Debug.Log(moving);
         }
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D collider) {
         animator.SetBool("isAttacking", true);
     }
@@ -44,4 +44,5 @@ public class EnemyAnim : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collider) {
         animator.SetBool("isAttacking", false);
     }
+*/
 }

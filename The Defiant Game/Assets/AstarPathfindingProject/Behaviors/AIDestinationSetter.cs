@@ -73,6 +73,7 @@ public class AIDestinationSetter : VersionedMonoBehaviour {
 		void ChasePlayer(){
 			if(Vector2.Distance(transform.position, target.position) > stopDistance){
 				if (target != null && ai != null) ai.destination = target.position;
+				//Vector2.zero
 			}
         }
 		void StopChasing(){
