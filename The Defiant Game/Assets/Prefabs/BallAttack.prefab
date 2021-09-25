@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6049903197504739319}
   - component: {fileID: 353149323783441643}
   - component: {fileID: 5235880468138428380}
+  - component: {fileID: -8005043470090696103}
   m_Layer: 0
   m_Name: BallAttack
   m_TagString: Untagged
@@ -139,6 +140,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieTime: 5
-  damage: 0
+  damage: 10
+  missTime: 0.05
   dieButtle: {fileID: 0}
   speed: 1
+  ballExplode: {fileID: 8425714559650862149, guid: cc67205ede257494c88a245f21c988d4,
+    type: 3}
+--- !u!58 &-8005043470090696103
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341799468590651398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.065

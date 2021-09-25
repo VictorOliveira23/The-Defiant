@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 125808775}
   - component: {fileID: 125808778}
   - component: {fileID: 125808781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.005, y: -0.01}
@@ -601,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 167182944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,6 +931,7 @@ GameObject:
   - component: {fileID: 399463908}
   - component: {fileID: 399463909}
   - component: {fileID: 399463910}
+  - component: {fileID: 399463919}
   - component: {fileID: 399463913}
   - component: {fileID: 399463912}
   - component: {fileID: 399463911}
@@ -939,7 +940,7 @@ GameObject:
   - component: {fileID: 399463916}
   - component: {fileID: 399463917}
   - component: {fileID: 399463918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  bloodEffect: {fileID: 8425714559650862149, guid: a236454e819519e4cb9dadb32001d237,
+  bloodEffect: {fileID: 8425714559650862149, guid: e0970c2429e362248a58f708178ba4f1,
     type: 3}
 --- !u!114 &399463914
 MonoBehaviour:
@@ -1189,7 +1190,7 @@ MonoBehaviour:
   attackRange: 0.39
   player: {fileID: 125808774}
   enemy: {fileID: 777817452}
-  animator: {fileID: 0}
+  animator: {fileID: 399463910}
   cooldownTime: 2
   damage: 10
   attackPos: {fileID: 167182944}
@@ -1197,6 +1198,22 @@ MonoBehaviour:
   slimeBall: {fileID: 1341799468590651398, guid: 7cd42efd479128a40a3efef55741f0fb,
     type: 3}
   shootSpeed: 5
+--- !u!58 &399463919
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399463907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1001 &403988492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2203,7 +2220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 623090444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CamFallow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2235,7 +2252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 629286960}
   - component: {fileID: 629286959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shake
   m_TagString: ScreenShake
   m_Icon: {fileID: 0}
@@ -2524,7 +2541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777817452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySlime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5424,7 +5441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1649783801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6177,7 +6194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914891330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttackPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6476,9 +6493,9 @@ GameObject:
   - component: {fileID: 2132128451}
   - component: {fileID: 2132128453}
   - component: {fileID: 2132128454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: player_
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
