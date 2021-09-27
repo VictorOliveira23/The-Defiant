@@ -11,7 +11,6 @@ public class EnemySlime : MonoBehaviour
     private Transform player;
     private Vector2 targat;
     private Rigidbody2D rb2D;
-    private float thrust = 1f;
     public GameObject ballExplode;
 
 
