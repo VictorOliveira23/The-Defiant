@@ -7,13 +7,16 @@ public class PlayerHealth : MonoBehaviour
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider;
+    public GameObject bloodEffect;
+
 
     private void Start() {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
     }
-   
+    
     public void UpdateHealth(float mod){ //this is for if the player picks up a healthpack
+        Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health += mod;
         if(health > maxHealth){
             health = maxHealth;
@@ -21,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
             health = mod;
         }else if(health <= 0){
             health = 0f;
-            healthSlider.value = health;
             PlayerDie();
         }
     }

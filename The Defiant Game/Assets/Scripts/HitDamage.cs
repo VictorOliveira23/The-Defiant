@@ -12,6 +12,8 @@ public class HitDamage : MonoBehaviour
     public float cooldownTime = 2f;
     private float nextFireTime = 0;
     public int damage = 10;
+    public float knockBackPower = 500;
+    public float knockBackDuration = 10;
     public Transform attackPos;
 
 
@@ -52,6 +54,7 @@ public class HitDamage : MonoBehaviour
     public void enemyAttack(){
         if(Vector2.Distance(player.position, enemy.position) <= attackRange){
             GameObject.FindObjectOfType<PlayerHealth>().UpdateHealth(-damage);
+            GameObject.FindObjectOfType<Knockback>().UpdateKock(knockBackDuration,knockBackPower,this.transform);
         }
     }
     void OnDrawGizmosSelected() {
